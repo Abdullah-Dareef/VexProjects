@@ -1,19 +1,19 @@
 
 int normalizeAccelerometer(char axis)
 {
-	int nBiasValues[3];
-  nBiasValues[0] = SensorValue[xAxis];
-  nBiasValues[1] = SensorValue[yAxis];
-  nBiasValues[2] = SensorValue[zAxis];
+	//int nBiasValues[3];
+ // nBiasValues[0] = SensorValue[xAxis];
+ // nBiasValues[1] = SensorValue[yAxis];
+ // nBiasValues[2] = SensorValue[zAxis];
 
   switch (axis)
   {
   	case 'x':
   		return SensorValue[xAxis] - nBiasValues[0];
   	case 'y':
-  		return SensorValue[xAxis] - nBiasValues[0];
+  		return SensorValue[yAxis] - nBiasValues[1];
   	case 'z':
-  		return SensorValue[xAxis] - nBiasValues[0];
+  		return SensorValue[zAxis] - nBiasValues[2];
   }
   return 9001;
 
