@@ -183,6 +183,7 @@ task main()
 	//at a speed of 50, then wait for half of a second
 //	intake();
 	StartTask(moveArm);
+	nLCDButtons;
 	turnLeft(130,127);
 	moveForward(1450, 127);
 //	wait1Msec(500);
